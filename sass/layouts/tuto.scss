@@ -17,18 +17,17 @@
     display: flex;
     align-items: center;
     list-style-type: none;
-    background-color: $colour-grey;
+    background-color: $color-grey;
     padding: 1.5rem 2rem;
     flex-grow: 1;
     border-radius: 1rem;
-    //box-shadow: 2px 1px 8px -3px #7e7e7e;
     @include box-shadow;
   }
   & li::before {
     content: counter(steps);
     counter-increment: steps;
     color: $color-white;
-    background-color: $colour-primary;
+    background-color: $color-primary;
     width: 2rem;
     height: 2rem;
     display: grid;
@@ -44,7 +43,7 @@
     cursor: pointer;
   }
   &li:hover i::before {
-    color: $colour-primary;
+    color: $color-primary;
   }
   & li i.fas {
     margin-right: 1rem;

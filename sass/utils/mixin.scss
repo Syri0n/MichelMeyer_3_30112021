@@ -11,7 +11,7 @@
     padding: 1rem 1.5rem;
     border: none;
     //box-shadow: 0 2px 4px #a8a7a7cc;
-    background-image: linear-gradient(to top, ($colour-primary, $colour-secondary));
+    background-image: linear-gradient(to top, ($color-primary, $color-secondary));
     border-radius: 2rem;
     cursor: pointer;
     @include box-shadow;
