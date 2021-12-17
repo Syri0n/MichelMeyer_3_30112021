@@ -1,3 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+body {
+  font-family: "Roboto";
+  margin: auto;
+}
 
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  font-family: "Shrikhand", cursive;
+  box-shadow: 0 0 0.5rem #737373;
+  position: relative;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+header h1 {
+  font-size: 2rem;
+  margin: 10px;
+}
+
+.header__arrow {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 2rem;
+  margin-top: 1rem;
+  height: 2rem;
+  width: 2rem;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+  font-size: 1.25rem;
+  padding: 15px;
+  font-weight: bold;
+}
+.location i {
+  font-size: 1.25rem;
+  margin-top: 2px;
+}
+.location-text {
+  padding-left: 10px;
+}
+
+.explorer {
+  text-align: center;
+  background-color: #f6f6f6;
+  padding: 2rem;
+}
+.explorer button {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 1rem 1.5rem;
+  border: none;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  border-radius: 2rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 7px #d3d3d3;
+}
+.explorer button:hover {
+  transform: scale(1.02);
+}
+.explorer a {
+  text-decoration: none;
+  color: white;
+}
+
+.tuto {
+  counter-reset: steps;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+.tuto ol {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+}
+@media (max-width: 1000px) {
+  .tuto ol {
+    flex-direction: column;
+  }
+}
+.tuto li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  background-color: #f6f6f6;
+  padding: 1.5rem 2rem;
+  flex-grow: 1;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 7px #d3d3d3;
+}
+.tuto li::before {
+  content: counter(steps);
+  counter-increment: steps;
+  color: #ffffff;
+  background-color: #9356DC;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -1rem;
+  transform: translateY(-50%);
+}
+.tuto li:hover {
+  background-color: #f2eafb;
+  cursor: pointer;
+}
+.tutoli:hover i::before {
+  color: #9356DC;
+}
+.tuto li i.fas {
+  margin-right: 1rem;
+  color: #7e7e7e;
+  font-size: 1.5rem;
+}
+
+.footer {
+  background-color: #353535;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+.footer-logo {
+  color: white;
+  font-family: "Shrikhand", "cursive";
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-listLink {
+  margin: 0.5rem 0;
+}
+.footer-link {
+  color: white;
+  text-decoration: none;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+.footer-icon {
+  width: 1rem;
+  margin-right: 0.5rem;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,18 @@
+@mixin box-shadow {
+    box-shadow: 2px 2px 7px #d3d3d3;
+}
+
+//BOUTONS
+
+@mixin btn-menu {
+    color: $color-white;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    //box-shadow: 0 2px 4px #a8a7a7cc;
+    background-image: linear-gradient(to top, ($colour-primary, $colour-secondary));
+    border-radius: 2rem;
+    cursor: pointer;
+    @include box-shadow;
+}

@@ -1,0 +1,36 @@
+@import "../utils/mixin.scss";
+
+.location {
+    display: flex;
+    justify-content: center;
+    background-color: #eaeaea;
+    font-size: 1.25rem;
+    padding: 15px;
+    font-weight: bold;
+    & i {
+        font-size: 1.25rem;
+        margin-top: 2px;
+    }    
+    
+    &-text{
+        padding-left: 10px;
+    }
+
+}
+
+.explorer{
+    text-align: center;
+    background-color: $colour-grey;
+    padding: 2rem;
+    & button {
+        @include btn-menu;    
+
+    &:hover {
+        transform: scale(1.02);
+    }
+    }
+    a{
+    text-decoration: none;
+    color: white;
+    }
+}

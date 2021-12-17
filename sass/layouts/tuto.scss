@@ -1,0 +1,56 @@
+.tuto {
+  counter-reset: steps;
+  margin-bottom: 2rem;
+  padding: 2rem;
+ & ol {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+  } 
+  @media (max-width: 1000px) {
+    & ol {
+      flex-direction: column;
+    }
+  }
+  & li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    background-color: $colour-grey;
+    padding: 1.5rem 2rem;
+    flex-grow: 1;
+    border-radius: 1rem;
+    //box-shadow: 2px 1px 8px -3px #7e7e7e;
+    @include box-shadow;
+  }
+  & li::before {
+    content: counter(steps);
+    counter-increment: steps;
+    color: $color-white;
+    background-color: $colour-primary;
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: -1rem;
+    transform: translateY(-50%);
+  }
+  & li:hover {
+    background-color: #f2eafb;
+    cursor: pointer;
+  }
+  &li:hover i::before {
+    color: $colour-primary;
+  }
+  & li i.fas {
+    margin-right: 1rem;
+    color: #7e7e7e;
+    font-size: 1.5rem;
+  }
+}
+
+ 

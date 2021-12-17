@@ -1,6 +1,7 @@
 {
   "name": "ohmyfood",
   "version": "1.0.0",
+  "description": "Projet P3 du parcour Développeur Web de chez Openclassrooms",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./css/style.css"
@@ -9,11 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/Syri0n/MichelMeyer_3_30112021.git"
   },
-  "author": "Michel Meyer.",
+  "author": "Michel MEYER",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Syri0n/MichelMeyer_3_30112021/issues"
   },
   "homepage": "https://github.com/Syri0n/MichelMeyer_3_30112021#readme",
-  "description": ""
+  "dependencies": {
+    "sass": "^1.44.0"
+  }
 }
