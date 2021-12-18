@@ -194,7 +194,7 @@ header h1 {
 .footer .container {
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
+  padding: 1.5rem 2rem;
 }
 .footer-logo {
   color: white;
