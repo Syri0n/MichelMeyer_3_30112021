@@ -21,7 +21,7 @@
     }
   
     &-listLink {
-    margin: 0.5rem 0;
+    margin: 0.5rem;
     }
   
     &-link {
@@ -36,4 +36,15 @@
     width: 1rem;
     margin-right: 0.5rem;
     }
+
+@media (min-width:710px){
+    &-logo {
+        text-align: center;
+        }
+    &-list {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        }      
+}
 }
