@@ -44,10 +44,12 @@
 
   &-new{
     background-color: $color-tertiary;
+    color: darken($color-tertiary, 50%);
     padding: 0.5rem;
     position: absolute;
     top: 1rem;
-    right: 1rem;    
+    right: 1rem;
+    border-radius: 0.2rem;      
   }
   
   &-footer {
