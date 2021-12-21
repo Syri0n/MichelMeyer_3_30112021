@@ -4,3 +4,11 @@
     width: 100%;
     object-fit: cover;
   }
+.menu{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.btn-menu{
+  @include btn-menu;
+}

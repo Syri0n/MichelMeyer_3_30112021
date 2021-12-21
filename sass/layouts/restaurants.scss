@@ -2,58 +2,66 @@
     background-color: #f6f6f6;
     padding: 2rem;
     
-    &-title {
-      margin: 0;
-      margin-bottom: 0.25rem;
-    }
-.container {
-    max-width: 1280px;
-    margin: auto;
-    position: relative;
-}
+  &-title {
+    margin: 0;
+    margin-bottom: 0.25rem;
+  }
+  .container {
+      max-width: 1280px;
+      margin: auto;
+      position: relative;
+  }
 }
     
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    column-gap: 2rem;
-    row-gap: 2rem;
-    margin-top: 2rem;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+  margin-top: 2rem;
   
-    @media (min-width:900px) {
-        grid-template-columns: repeat(2,1fr);
-    }
+  @media (min-width:900px) {
+    grid-template-columns: repeat(2,1fr);
+  }
 }
   
-  .card {
-    background-color: white;
-    border-radius: 1rem;
-    position: relative;
-    text-decoration: none;
-    color: inherit;
-    display: block;
-  
-    &-img {
-      height: 12rem;
-      width: 100%;
-      border: transparent solid 0px;
-      border-radius: 1rem 1rem 0 0;
-      box-shadow: none;
-      object-fit: cover;
-    }
-  
-    &-footer {
-      padding: 1rem;
-      position: relative;
-      display: flex;
-      align-items: center;
-    }
-  
-    &-content {
-      flex: 1;
-    }
-    & i:hover{
-        color: $color-secondary;
-    } 
-}
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: block;
 
+  &-img {
+    height: 12rem;
+    width: 100%;
+    border: transparent solid 0px;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: none;
+    object-fit: cover;
+  }
+
+  &-new{
+    background-color: $color-tertiary;
+    padding: 0.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;    
+  }
+  
+  &-footer {
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  &-content {
+    flex: 1;
+  }
+  
+  & i:hover{
+    color: $color-secondary;
+  } 
+}
