@@ -16,26 +16,27 @@
   position: relative;
 }
 .menus{
-    display: grid;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+  background-color: $color-grey;   
+  @media (min-width:1000px) {
     grid-template-columns: repeat(3,1fr);
-    gap: 1rem;
-    @media (max-width:900px){
-      grid-template-rows: repeat(3,1fr);
-    }   
-    background-color: $color-grey;
-    
-    h3 {
-      text-transform: uppercase;
-      font-weight: 400;
-      position: relative;
-      margin-bottom: 1rem;
-    &::after {
-      position: absolute;
-      top: 1.5rem;
-      left: 0;
-      height: 0.25rem;
-      width: 3rem;
-      background-color: $color-tertiary;
+  }   
+  
+  h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 1rem;
+  &::after {
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    height: 0.25rem;
+    width: 3rem;
+    background-color: $color-tertiary;
     }
   }
 }

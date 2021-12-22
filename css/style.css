@@ -285,13 +285,14 @@ header h1 {
 
 .menus {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
   background-color: #f6f6f6;
 }
-@media (max-width: 900px) {
+@media (min-width: 1000px) {
   .menus {
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .menus h3 {
