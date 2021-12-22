@@ -31,10 +31,10 @@ header h1 {
   align-items: center;
   justify-content: center;
   left: 2rem;
-  margin-top: 1rem;
+  margin-top: 1.4rem;
   height: 2rem;
   width: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #000;
 }
 
@@ -205,10 +205,10 @@ header h1 {
   right: 1rem;
 }
 .card .fas.fa-heart {
-  color: #FF79DA;
+  color: #9356DC;
 }
 .card .far {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .footer {
@@ -255,17 +255,16 @@ header h1 {
   }
 }
 
+.menu {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
 .menu-img {
   max-width: 100%;
   max-height: 32rem;
   width: 100%;
   object-fit: cover;
-}
-
-.menu {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
 }
 
 .btn-menu {
@@ -278,6 +277,9 @@ header h1 {
   border-radius: 2rem;
   cursor: pointer;
   box-shadow: 2px 2px 7px #d3d3d3;
+}
+.btn-menu:hover {
+  transform: scale(1.02);
 }
 
 /*# sourceMappingURL=style.css.map */

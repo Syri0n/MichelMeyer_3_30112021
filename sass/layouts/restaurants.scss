@@ -64,6 +64,7 @@ margin-top: 2rem;
   }
 
   &-like:hover{
+    
     .fas.fa-heart {
       opacity: 1;
       transition: .3s ease-in-out;
@@ -78,9 +79,9 @@ margin-top: 2rem;
     right: 1rem;
   }
   .fas.fa-heart{
-    color:$color-secondary;
+    color:$color-primary;
   }
   .far {
-    background-color: white;
+    background-color: $color-white;
   }
 }

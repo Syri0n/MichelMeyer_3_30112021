@@ -14,5 +14,9 @@
     border-radius: 2rem;
     cursor: pointer;
     @include box-shadow;
+    
+    &:hover{
+    transform: scale(1.02);
+    }
 }
 
