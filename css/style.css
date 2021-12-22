@@ -10,10 +10,11 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: center;
   font-family: "Shrikhand", cursive;
-  box-shadow: 0 0 0.5rem #737373;
+  text-align: center;
+  box-shadow: 2px 1px 8px -3px #7e7e7e;
+  padding: 0.5rem;
+  margin: 0;
   position: relative;
 }
 header a {
@@ -61,16 +62,19 @@ header h1 {
 .explorer button {
   color: #ffffff;
   text-align: center;
+  font-weight: 500;
   font-size: 1.1rem;
-  padding: 1rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   border: none;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   border-radius: 2rem;
+  transition-duration: 0.25s;
   cursor: pointer;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
 .explorer button:hover {
-  transform: scale(1.02);
+  background-color: white;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
 .explorer a {
   text-decoration: none;
@@ -195,21 +199,28 @@ header h1 {
 }
 .card-like:hover .fas.fa-heart {
   opacity: 1;
-  transition: 300ms ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .card-like:hover .far.fa-heart {
   opacity: 0;
-  transition: 300ms ease-in-out;
-}
-.card .far.fa-heart {
-  position: absolute;
-  right: 1rem;
+  transition: 0.3s ease-in-out;
 }
 .card .fas.fa-heart {
-  color: #9356DC;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 25px;
+  top: 30px;
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
 }
-.card .far {
-  background-color: #ffffff;
+.card .far.fa-heart {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 25px;
+  top: 30px;
+  opacity: 1;
 }
 
 .footer {
@@ -256,6 +267,49 @@ header h1 {
   }
 }
 
+.fond-gris-menu {
+  position: relative;
+  background-color: #f6f6f6;
+  border-radius: 45px 45px 0px 0px;
+  margin-top: -8rem;
+  padding-bottom: 1rem;
+}
+
+.page-restaurant {
+  margin: 2rem;
+}
+.page-restaurant__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.75rem;
+  margin: 0;
+  padding-top: 20px;
+}
+.page-restaurant .hoverheart:hover .fas.fa-heart {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.page-restaurant .hoverheart:hover .far.fa-heart {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.page-restaurant .fas.fa-heart {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 25px;
+  top: 30px;
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+.page-restaurant .far.fa-heart {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 25px;
+  top: 30px;
+  opacity: 1;
+}
+
 .menu {
   display: flex;
   justify-content: center;
@@ -271,16 +325,19 @@ header h1 {
 .btn-menu {
   color: #ffffff;
   text-align: center;
+  font-weight: 500;
   font-size: 1.1rem;
-  padding: 1rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   border: none;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   border-radius: 2rem;
+  transition-duration: 0.25s;
   cursor: pointer;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
 .btn-menu:hover {
-  transform: scale(1.02);
+  background-color: white;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
 
 /*# sourceMappingURL=style.css.map */

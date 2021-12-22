@@ -1,9 +1,10 @@
 
 header {
-    display: flex;
-    justify-content: center;
     font-family: "Shrikhand", cursive;
-    box-shadow: 0 0 0.5rem #737373;
+    text-align: center;
+    @include box-shadow;
+    padding: 0.5rem;
+    margin: 0;    
     position: relative;
 
     & a {
@@ -14,7 +15,8 @@ header {
     & h1 {
     font-size: 2rem;
     margin: 1rem;
-    }       
+    }   
+
 }
 
 .header-back {
