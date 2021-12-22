@@ -1,5 +1,5 @@
 @mixin box-shadow {
-    box-shadow: 2px 2px 7px #d3d3d3;
+    box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
 
 //BOUTONS
@@ -20,3 +20,15 @@
     }
 }
 
+@mixin heart{
+    content: "\f004";
+    font-size: 2rem;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $color;
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: $opacity;
+    transition: all 200ms ease-in-out;  
+}

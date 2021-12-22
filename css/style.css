@@ -67,7 +67,7 @@ header h1 {
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   border-radius: 2rem;
   cursor: pointer;
-  box-shadow: 2px 2px 7px #d3d3d3;
+  box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
 .explorer button:hover {
   transform: scale(1.02);
@@ -101,7 +101,7 @@ header h1 {
   padding: 1.5rem 2rem;
   flex-grow: 1;
   border-radius: 1rem;
-  box-shadow: 2px 2px 7px #d3d3d3;
+  box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
 .tuto li::before {
   content: counter(steps);
@@ -159,12 +159,13 @@ header h1 {
 }
 
 .card {
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 1rem;
   position: relative;
   text-decoration: none;
   color: inherit;
   display: block;
+  box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
 .card-img {
   height: 12rem;
@@ -194,11 +195,11 @@ header h1 {
 }
 .card-like:hover .fas.fa-heart {
   opacity: 1;
-  transition: 0.3s ease-in-out;
+  transition: 300ms ease-in-out;
 }
 .card-like:hover .far.fa-heart {
   opacity: 0;
-  transition: 0.3s ease-in-out;
+  transition: 300ms ease-in-out;
 }
 .card .far.fa-heart {
   position: absolute;
@@ -276,7 +277,7 @@ header h1 {
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   border-radius: 2rem;
   cursor: pointer;
-  box-shadow: 2px 2px 7px #d3d3d3;
+  box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
 .btn-menu:hover {
   transform: scale(1.02);

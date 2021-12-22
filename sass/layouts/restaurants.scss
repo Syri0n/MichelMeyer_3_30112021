@@ -1,5 +1,5 @@
 .restaurants {
-  background-color: #f6f6f6;
+  background-color: $color-grey;
   padding: 2rem;
   
 &-title {
@@ -26,12 +26,13 @@ margin-top: 2rem;
 }
 
 .card {
-  background-color: white;
+  background-color: $color-white;
   border-radius: 1rem;
   position: relative;
   text-decoration: none;
   color: inherit;
   display: block;
+  @include box-shadow;
 
   &-img {
     height: 12rem;
@@ -67,11 +68,11 @@ margin-top: 2rem;
     
     .fas.fa-heart {
       opacity: 1;
-      transition: .3s ease-in-out;
+      transition: 300ms ease-in-out;
     }
     .far.fa-heart{
       opacity: 0;
-      transition: .3s ease-in-out;
+      transition: 300ms ease-in-out;
     }
   }
   .far.fa-heart{
