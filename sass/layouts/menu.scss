@@ -53,12 +53,15 @@
   overflow: hidden;
   margin: 0.5rem;
   @include box-shadow;
-}
-.menu-item__price{
-    align-items: flex-end;
-    display: flex;
-    font-weight: bold;
-    margin-left: auto;
+  &__description {
     padding: 1rem;
-  }
+    }
+  &__price{
+      align-items: flex-end;
+      display: flex;
+      font-weight: bold;
+      margin-left: auto;
+      padding: 1rem;
 
+  }
+}
