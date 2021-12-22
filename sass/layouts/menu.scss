@@ -12,6 +12,7 @@
   background-color: $color-grey;
   border-radius: 2rem 2rem 0 0;
   font-family: "Shrikhand", cursive;
+  margin-top: -2rem;
   padding: 2rem 1rem;
   position: relative;
 }
@@ -20,24 +21,44 @@
   grid-template-columns: repeat(1,1fr);
   column-gap: 2rem;
   row-gap: 2rem;
+  padding: 1rem;
   background-color: $color-grey;   
   @media (min-width:1000px) {
     grid-template-columns: repeat(3,1fr);
   }   
-  
+  &__category {
+    overflow: hidden;
+  }
   h3 {
     text-transform: uppercase;
     font-weight: 400;
     position: relative;
     margin-bottom: 1rem;
   &::after {
+    content: "";
     position: absolute;
     top: 1.5rem;
     left: 0;
-    height: 0.25rem;
+    height: 0.3rem;
     width: 3rem;
     background-color: $color-tertiary;
     }
   }
 }
+
+.menu-item{
+  display: flex;
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 0.5rem;
+  @include box-shadow;
+}
+.menu-item__price{
+    align-items: flex-end;
+    display: flex;
+    font-weight: bold;
+    margin-left: auto;
+    padding: 1rem;
+  }
 
