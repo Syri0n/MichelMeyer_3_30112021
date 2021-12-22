@@ -8,7 +8,7 @@
   object-position: center;
 }
 
-.resto-title{
+.resto__title{
   background-color: $color-grey;
   border-radius: 2rem 2rem 0 0;
   font-family: "Shrikhand", cursive;
@@ -19,12 +19,16 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 1rem;
-
-  h3 {
-    text-transform: uppercase;
-    font-weight: 400;
-    position: relative;
-    margin-bottom: 1rem;
+    @media (max-width:900px){
+      grid-template-rows: repeat(3,1fr);
+    }   
+    background-color: $color-grey;
+    
+    h3 {
+      text-transform: uppercase;
+      font-weight: 400;
+      position: relative;
+      margin-bottom: 1rem;
     &::after {
       position: absolute;
       top: 1.5rem;
@@ -33,5 +37,6 @@
       width: 3rem;
       background-color: $color-tertiary;
     }
+  }
 }
-}
+

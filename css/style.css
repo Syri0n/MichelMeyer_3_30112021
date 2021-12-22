@@ -275,7 +275,7 @@ header h1 {
   object-position: center;
 }
 
-.resto-title {
+.resto__title {
   background-color: #f6f6f6;
   border-radius: 2rem 2rem 0 0;
   font-family: "Shrikhand", cursive;
@@ -287,6 +287,12 @@ header h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  background-color: #f6f6f6;
+}
+@media (max-width: 900px) {
+  .menus {
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
 .menus h3 {
   text-transform: uppercase;
