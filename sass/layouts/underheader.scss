@@ -22,10 +22,12 @@
     padding: 2rem;
     & button {
         @include btn-menu;    
-
     }
     a{
     text-decoration: none;
     color: white;
+    }
+    h2, p{
+    margin: 1rem;
     }
 }
