@@ -340,4 +340,31 @@ header h1 {
   padding: 1rem;
 }
 
+.order {
+  display: grid;
+  place-content: center;
+  padding: 2rem;
+}
+.order button {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  border-radius: 2rem;
+  transition-duration: 0.25s;
+  cursor: pointer;
+  box-shadow: 2px 1px 8px -3px #7e7e7e;
+}
+.order button:hover {
+  background-color: white;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
+.order a {
+  color: white;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=style.css.map */

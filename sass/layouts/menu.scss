@@ -66,3 +66,15 @@
   }
 }
 
+.order{
+  display: grid;
+  place-content: center;
+  padding: 2rem;
+  & button {
+    @include btn-menu;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+  } 
+}
