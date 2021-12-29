@@ -63,32 +63,5 @@ margin-top: 2rem;
   &-content {
     flex: 1;
   }
-
-  &-like:hover{
-    .fas.fa-heart {
-      opacity: 1;
-      transition: .3s ease-in-out;
-  }
-  .far.fa-heart{
-      opacity: 0;
-      transition: .3s ease-in-out;
-  }
-}
-.fas.fa-heart{
-  font-size: 1.5rem;
-  position:absolute;
-  right: 25px;
-  top: 30px;
-  background: $gradient;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
-}
-.far.fa-heart{
-  font-size: 1.5rem;
-  position:absolute;
-  right: 25px;
-  top: 30px;
-  opacity: 1;
-}
+  @include like;
 }

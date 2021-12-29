@@ -23,7 +23,36 @@
         box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
     }
 }
-
+@mixin like {
+  .fas.fa-heart {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 25px;
+    top: 30px;
+    background: linear-gradient(#ff79da, #9356dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .far.fa-heart {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 25px;
+    top: 30px;
+    opacity: 1;
+  }
+    .card-like:hover{
+      .fas.fa-heart {
+        opacity: 1;
+        transition: .3s ease-in-out;
+    }
+    .far.fa-heart{
+        opacity: 0;
+        transition: .3s ease-in-out;
+    }
+  }
+}
 //ANIMATIONS
 
 @mixin check {

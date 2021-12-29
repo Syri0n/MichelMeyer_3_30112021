@@ -208,14 +208,6 @@ header:hover {
 .card-content {
   flex: 1;
 }
-.card-like:hover .fas.fa-heart {
-  opacity: 1;
-  transition: 0.3s ease-in-out;
-}
-.card-like:hover .far.fa-heart {
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-}
 .card .fas.fa-heart {
   font-size: 1.5rem;
   position: absolute;
@@ -225,6 +217,7 @@ header:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
+  cursor: pointer;
 }
 .card .far.fa-heart {
   font-size: 1.5rem;
@@ -232,6 +225,14 @@ header:hover {
   right: 25px;
   top: 30px;
   opacity: 1;
+}
+.card .card-like:hover .fas.fa-heart {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.card .card-like:hover .far.fa-heart {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
 }
 
 .footer {
@@ -297,6 +298,32 @@ header:hover {
   margin-top: -2rem;
   padding: 2rem 1rem;
   position: relative;
+}
+.resto-main .resto__title .fas.fa-heart {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 25px;
+  top: 30px;
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  cursor: pointer;
+}
+.resto-main .resto__title .far.fa-heart {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 25px;
+  top: 30px;
+  opacity: 1;
+}
+.resto-main .resto__title .card-like:hover .fas.fa-heart {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.resto-main .resto__title .card-like:hover .far.fa-heart {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
 }
 .resto-main .menus {
   display: grid;
