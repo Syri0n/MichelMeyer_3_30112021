@@ -16,7 +16,9 @@ header {
     font-size: 2rem;
     margin: 1rem;
     }   
-
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .header-back {
