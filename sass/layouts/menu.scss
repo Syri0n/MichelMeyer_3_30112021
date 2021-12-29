@@ -81,6 +81,7 @@
     place-items: center;
     flex-shrink: 0;
     background-color: $color-tertiary;
+    width: 4rem;
     i{
       background: white;
       border-radius: 1rem;
@@ -96,7 +97,7 @@
   display: grid;
   place-content: center;
   padding: 2rem;
-  & button {
+    & button {
     @include btn-menu;
   }
   a{
@@ -105,5 +106,3 @@
   } 
 }
 }
-
-

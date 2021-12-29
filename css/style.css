@@ -360,6 +360,7 @@ header:hover {
   place-items: center;
   flex-shrink: 0;
   background-color: #99E2D0;
+  width: 4rem;
 }
 .resto-main .menu-item__check i {
   background: white;

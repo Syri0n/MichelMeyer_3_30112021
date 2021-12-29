@@ -23,3 +23,16 @@
         box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
     }
 }
+
+//ANIMATIONS
+
+@mixin check {
+    @keyframes check {
+      0% {
+        transform: rotate(-270deg);
+      }
+      100% {
+        transform: rotate(0);
+      }
+    }
+  }
