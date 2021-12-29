@@ -69,15 +69,25 @@
       text-overflow: ellipsis;
     }  
   }
-
-    &__price{
-      align-items: flex-end;
-      display: flex;
-      font-weight: bold;
-      margin-left: auto;
-      padding: 1rem;
-
+  &__price{
+    align-items: flex-end;
+    display: flex;
+    font-weight: bold;
+    margin-left: auto;
+    padding: 1rem;
   }
+  &__check{
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    background-color: $color-tertiary;
+    i{
+      color: white;
+    }
+  }
+  &:hover{
+    cursor: pointer;
+  }  
 }
 
 .order{

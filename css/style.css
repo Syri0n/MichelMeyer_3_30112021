@@ -352,6 +352,18 @@ header h1 {
   margin-left: auto;
   padding: 1rem;
 }
+.resto-main .menu-item__check {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  background-color: #99E2D0;
+}
+.resto-main .menu-item__check i {
+  color: white;
+}
+.resto-main .menu-item:hover {
+  cursor: pointer;
+}
 .resto-main .order {
   display: grid;
   place-content: center;
