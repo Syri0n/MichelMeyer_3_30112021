@@ -336,6 +336,14 @@ header h1 {
 }
 .resto-main .menu-item__description {
   padding: 1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.resto-main .menu-item__description h4,
+.resto-main .menu-item__description p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .resto-main .menu-item__price {
   align-items: flex-end;
