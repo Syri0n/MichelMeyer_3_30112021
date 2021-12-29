@@ -283,16 +283,19 @@ header h1 {
   object-position: center;
 }
 
-.resto__title {
+.resto-main {
+  background-color: #f6f6f6;
+}
+.resto-main .resto__title {
   background-color: #f6f6f6;
   border-radius: 2rem 2rem 0 0;
   font-family: "Shrikhand", cursive;
+  font-size: 1rem;
   margin-top: -2rem;
   padding: 2rem 1rem;
   position: relative;
 }
-
-.menus {
+.resto-main .menus {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   column-gap: 2rem;
@@ -301,20 +304,20 @@ header h1 {
   background-color: #f6f6f6;
 }
 @media (min-width: 1000px) {
-  .menus {
+  .resto-main .menus {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.menus__category {
+.resto-main .menus__category {
   overflow: hidden;
 }
-.menus h3 {
+.resto-main .menus h3 {
   text-transform: uppercase;
   font-weight: 400;
   position: relative;
   margin-bottom: 1rem;
 }
-.menus h3::after {
+.resto-main .menus h3::after {
   content: "";
   position: absolute;
   top: 1.5rem;
@@ -323,8 +326,7 @@ header h1 {
   width: 3rem;
   background-color: #99E2D0;
 }
-
-.menu-item {
+.resto-main .menu-item {
   display: flex;
   background-color: white;
   border-radius: 1rem;
@@ -332,23 +334,22 @@ header h1 {
   margin: 0.5rem;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
-.menu-item__description {
+.resto-main .menu-item__description {
   padding: 1rem;
 }
-.menu-item__price {
+.resto-main .menu-item__price {
   align-items: flex-end;
   display: flex;
   font-weight: bold;
   margin-left: auto;
   padding: 1rem;
 }
-
-.order {
+.resto-main .order {
   display: grid;
   place-content: center;
   padding: 2rem;
 }
-.order button {
+.resto-main .order button {
   color: #ffffff;
   text-align: center;
   font-weight: 500;
@@ -361,11 +362,11 @@ header h1 {
   cursor: pointer;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
-.order button:hover {
+.resto-main .order button:hover {
   background-color: white;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
-.order a {
+.resto-main .order a {
   color: white;
   text-decoration: none;
 }
