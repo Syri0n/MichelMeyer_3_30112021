@@ -57,7 +57,8 @@
   border-radius: 1rem;
   overflow: hidden;
   margin: 0.5rem;
-
+  animation: appear 1s;
+  animation-fill-mode: both;
   @include box-shadow;
   &__description {
     padding: 1rem;

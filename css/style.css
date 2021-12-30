@@ -14,6 +14,14 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 header {
   font-family: "Shrikhand", cursive;
   text-align: center;
@@ -366,6 +374,8 @@ header:hover {
   border-radius: 1rem;
   overflow: hidden;
   margin: 0.5rem;
+  animation: appear 1s;
+  animation-fill-mode: both;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
 .resto-main .menu-item__description {
