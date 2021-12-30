@@ -17,6 +17,10 @@
     transition-duration: 0.25s;
     cursor: pointer;
     @include box-shadow;
+    a{
+      color: white;
+      text-decoration: none;
+    } 
     
     &:hover{
         background-color: white;

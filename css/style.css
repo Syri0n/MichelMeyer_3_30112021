@@ -80,6 +80,10 @@ header:hover {
   cursor: pointer;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
+.explorer button a {
+  color: white;
+  text-decoration: none;
+}
 .explorer button:hover {
   background-color: white;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
@@ -388,6 +392,8 @@ header:hover {
   flex-shrink: 0;
   background-color: #99E2D0;
   width: 4rem;
+  margin-right: -4rem;
+  transition: margin-right 0.5s;
 }
 .resto-main .menu-item__check i {
   background: white;
@@ -396,6 +402,20 @@ header:hover {
 }
 .resto-main .menu-item:hover {
   cursor: pointer;
+}
+.resto-main .menu-item:hover .menu-item__check {
+  margin-right: 0;
+}
+.resto-main .menu-item:hover .menu-item__check i {
+  animation: check 0.5s ease-in-out;
+}
+@keyframes check {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 .resto-main .order {
   display: grid;
@@ -415,13 +435,13 @@ header:hover {
   cursor: pointer;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
+.resto-main .order button a {
+  color: white;
+  text-decoration: none;
+}
 .resto-main .order button:hover {
   background-color: white;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-}
-.resto-main .order a {
-  color: white;
-  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

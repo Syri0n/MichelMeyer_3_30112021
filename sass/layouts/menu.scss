@@ -83,6 +83,8 @@
     flex-shrink: 0;
     background-color: $color-tertiary;
     width: 4rem;
+    margin-right: -1*4rem;
+    transition: margin-right 0.5s;
     i{
       background: white;
       border-radius: 1rem;
@@ -91,6 +93,13 @@
   }
   &:hover{
     cursor: pointer;
+    .menu-item__check{
+      margin-right: 0;
+      i {
+        @include check;
+        animation: check 0.5s ease-in-out;
+      }
+    }
   }  
 }
 
@@ -101,9 +110,5 @@
     & button {
     @include btn-menu;
   }
-  a{
-    color: white;
-    text-decoration: none;
-  } 
 }
 }
