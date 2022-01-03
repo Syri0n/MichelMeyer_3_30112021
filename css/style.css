@@ -415,6 +415,9 @@ header:hover {
 .resto-main .menus__category {
   overflow: hidden;
 }
+.resto-main .menus__category__list {
+  padding-top: 1rem;
+}
 .resto-main .menus h3 {
   text-transform: uppercase;
   font-weight: 400;
