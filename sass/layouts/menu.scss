@@ -28,7 +28,7 @@
   row-gap: 2rem;
   padding: 1rem;
   background-color: $color-grey;   
-  @media (min-width:1000px) {
+  @media (min-width:900px) {
     grid-template-columns: repeat(3,1fr);
   }   
   &__category {
@@ -57,8 +57,7 @@
   border-radius: 1rem;
   overflow: hidden;
   margin: 0.5rem;
-  animation: appear 1s;
-  animation-fill-mode: both;
+  animation: appear 2s;
   @include box-shadow;
   &__description {
     padding: 1rem;

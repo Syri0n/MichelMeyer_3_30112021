@@ -16,10 +16,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 @keyframes appear {
   0% {
-    transform: scale(0);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    opacity: 1 ease-in;
   }
 }
 header {
@@ -36,7 +36,7 @@ header a {
 }
 header h1 {
   font-size: 2rem;
-  margin: 1rem;
+  margin: 0rem;
 }
 header:hover {
   cursor: pointer;
@@ -226,7 +226,7 @@ header:hover {
   right: 25px;
   top: 30px;
   background: linear-gradient(#ff79da, #9356dc);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
   cursor: pointer;
@@ -264,7 +264,7 @@ header:hover {
 .footer-list {
   list-style: none;
   padding: 0;
-  margin: -0.5rem;
+  margin: 0;
 }
 .footer-listLink {
   margin: 0.5rem;
@@ -317,7 +317,7 @@ header:hover {
   right: 25px;
   top: 30px;
   background: linear-gradient(#ff79da, #9356dc);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
   cursor: pointer;
@@ -345,7 +345,7 @@ header:hover {
   padding: 1rem;
   background-color: #f6f6f6;
 }
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   .resto-main .menus {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -374,8 +374,7 @@ header:hover {
   border-radius: 1rem;
   overflow: hidden;
   margin: 0.5rem;
-  animation: appear 1s;
-  animation-fill-mode: both;
+  animation: appear 2s;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
 .resto-main .menu-item__description {
