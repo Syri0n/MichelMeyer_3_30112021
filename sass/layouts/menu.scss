@@ -33,9 +33,9 @@
   }   
   &__category {
     overflow: hidden;
-    &__list {
-      padding-top: 1rem;
-    }
+  &__list {
+    padding-top: 1rem;
+  }
   }
   h3 {
     text-transform: uppercase;
@@ -107,9 +107,9 @@
 }
 
 .order{
-  display: grid;
+  display: flex;
   place-content: center;
-  padding: 2rem;
+  padding: 3rem;
     & button {
     @include btn-menu;
   }
