@@ -42,7 +42,7 @@
     background-color: #f2eafb;
     cursor: pointer;
   }
-  &li:hover i::before {
+  & li:hover i::before {
     color: $color-primary;
   }
   & li i.fas {

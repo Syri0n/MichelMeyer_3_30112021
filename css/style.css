@@ -212,7 +212,7 @@ header:hover {
   background-color: #f2eafb;
   cursor: pointer;
 }
-.tutoli:hover i::before {
+.tuto li:hover i::before {
   color: #9356DC;
 }
 .tuto li i.fas {
@@ -229,7 +229,8 @@ header:hover {
   margin: 0;
   margin-bottom: 0.25rem;
 }
-.restaurants .container {
+
+.container {
   max-width: 1280px;
   margin: auto;
   position: relative;
@@ -289,6 +290,7 @@ header:hover {
   right: 25px;
   top: 30px;
   background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
@@ -380,6 +382,7 @@ header:hover {
   right: 25px;
   top: 30px;
   background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
