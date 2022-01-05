@@ -3,7 +3,7 @@
     box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
 
-//BOUTONS
+//BOUTON
 
 @mixin btn-menu {
     color: $color-white;
@@ -27,6 +27,9 @@
         box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
     }
 }
+
+// BOUTON LIKE
+
 @mixin like {
   .fas.fa-heart {
     font-size: 1.5rem;
@@ -57,7 +60,9 @@
     }
   }
 }
-//ANIMATIONS
+
+
+//ANIMATIONS SELECTION MENU
 
 @mixin check {
     @keyframes check {
