@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 header {
-  font-family: "Shrikhand", cursive;
+  font-family: "Shrikhand", "cursive";
   text-align: center;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
   padding: 0.5rem;
@@ -290,6 +290,7 @@ header:hover {
   right: 25px;
   top: 30px;
   background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
@@ -366,42 +367,45 @@ header:hover {
 .resto-main {
   background-color: #f6f6f6;
 }
-.resto-main .resto__title {
+
+.resto__title {
   background-color: #f6f6f6;
   border-radius: 2rem 2rem 0 0;
-  font-family: "Shrikhand", cursive;
+  font-family: "Shrikhand", "cursive";
   font-size: 1rem;
   margin-top: -2rem;
   padding: 2rem 1rem;
   position: relative;
 }
-.resto-main .resto__title .fas.fa-heart {
+.resto__title .fas.fa-heart {
   font-size: 1.5rem;
   position: absolute;
   right: 25px;
   top: 30px;
   background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
   cursor: pointer;
 }
-.resto-main .resto__title .far.fa-heart {
+.resto__title .far.fa-heart {
   font-size: 1.5rem;
   position: absolute;
   right: 25px;
   top: 30px;
   opacity: 1;
 }
-.resto-main .resto__title .card-like:hover .fas.fa-heart {
+.resto__title .card-like:hover .fas.fa-heart {
   opacity: 1;
   transition: 0.3s ease-in-out;
 }
-.resto-main .resto__title .card-like:hover .far.fa-heart {
+.resto__title .card-like:hover .far.fa-heart {
   opacity: 0;
   transition: 0.3s ease-in-out;
 }
-.resto-main .menus {
+
+.menus {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   column-gap: 2rem;
@@ -410,23 +414,23 @@ header:hover {
   background-color: #f6f6f6;
 }
 @media (min-width: 900px) {
-  .resto-main .menus {
+  .menus {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.resto-main .menus__category {
+.menus__category {
   overflow: hidden;
 }
-.resto-main .menus__category__list {
+.menus__category__list {
   padding-top: 1rem;
 }
-.resto-main .menus h3 {
+.menus h3 {
   text-transform: uppercase;
   font-weight: 400;
   position: relative;
   margin-bottom: 1.5rem;
 }
-.resto-main .menus h3::after {
+.menus h3::after {
   content: "";
   position: absolute;
   top: 1.5rem;
@@ -435,7 +439,8 @@ header:hover {
   width: 3rem;
   background-color: #99E2D0;
 }
-.resto-main .menu-item {
+
+.menu-item {
   display: flex;
   background-color: white;
   border-radius: 1rem;
@@ -444,25 +449,25 @@ header:hover {
   animation: appear 2s;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
-.resto-main .menu-item__description {
+.menu-item__description {
   padding: 1rem;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.resto-main .menu-item__description h4,
-.resto-main .menu-item__description p {
+.menu-item__description h4,
+.menu-item__description p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.resto-main .menu-item__price {
+.menu-item__price {
   align-items: flex-end;
   display: flex;
   font-weight: bold;
   margin-left: auto;
   padding: 1rem;
 }
-.resto-main .menu-item__check {
+.menu-item__check {
   display: grid;
   place-items: center;
   flex-shrink: 0;
@@ -471,18 +476,18 @@ header:hover {
   margin-right: -4rem;
   transition: margin-right 0.5s;
 }
-.resto-main .menu-item__check i {
+.menu-item__check i {
   background: white;
   border-radius: 1rem;
   color: #99E2D0;
 }
-.resto-main .menu-item:hover {
+.menu-item:hover {
   cursor: pointer;
 }
-.resto-main .menu-item:hover .menu-item__check {
+.menu-item:hover .menu-item__check {
   margin-right: 0;
 }
-.resto-main .menu-item:hover .menu-item__check i {
+.menu-item:hover .menu-item__check i {
   animation: check 0.5s ease-in-out;
 }
 @keyframes check {
@@ -493,12 +498,13 @@ header:hover {
     transform: rotate(0);
   }
 }
-.resto-main .order {
+
+.order {
   display: flex;
   place-content: center;
   padding: 3rem;
 }
-.resto-main .order button {
+.order button {
   color: #ffffff;
   text-align: center;
   font-weight: 500;
@@ -512,11 +518,11 @@ header:hover {
   cursor: pointer;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
-.resto-main .order button a {
+.order button a {
   color: white;
   text-decoration: none;
 }
-.resto-main .order button:hover {
+.order button:hover {
   background-color: white;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
