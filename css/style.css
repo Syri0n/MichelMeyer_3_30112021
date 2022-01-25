@@ -425,6 +425,9 @@ header:hover {
 .menus__category__list {
   padding-top: 1rem;
 }
+.menus__category .appears-with-opacity {
+  animation: opacity 1s both;
+}
 .menus h3 {
   text-transform: uppercase;
   font-weight: 400;
@@ -447,7 +450,6 @@ header:hover {
   border-radius: 1rem;
   overflow: hidden;
   margin: 0.5rem;
-  animation: appear 2s;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
 .menu-item__description {
@@ -529,13 +531,24 @@ header:hover {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
 
-@keyframes appear {
+@keyframes opacity {
   0% {
     opacity: 0;
   }
   100% {
-    opacity: 1 ease-in;
+    opacity: 1;
   }
+}
+#case-1 {
+  animation-delay: 0.1s;
+}
+
+#case-2 {
+  animation-delay: 0.3s;
+}
+
+#case-3 {
+  animation-delay: 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */

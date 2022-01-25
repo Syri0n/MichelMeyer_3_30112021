@@ -40,6 +40,9 @@
   &__list {
     padding-top: 1rem;
   }
+  .appears-with-opacity {
+    animation: opacity 1s both;
+  }
 }
   h3 {
     text-transform: uppercase;
@@ -64,7 +67,6 @@
   border-radius: 1rem;
   overflow: hidden;
   margin: 0.5rem;
-  animation: appear 2s;
   @include box-shadow;
   &__description {
     padding: 1rem;
@@ -118,11 +120,27 @@
     @include btn-menu;
   }
 }  
-@keyframes appear {
+
+// ANIMATION PAGE MENU
+
+@keyframes opacity {
   0% {
     opacity: 0;
   }
   100% {
-    opacity: 1 ease-in;
+    opacity: 1;
   }
+}
+
+
+#case-1 {
+  animation-delay: 0.1s;
+}
+
+#case-2 {
+  animation-delay: 0.3s;
+}
+
+#case-3 {
+  animation-delay: 0.5s;
 }
